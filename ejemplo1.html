@@ -36,10 +36,22 @@
             }
         });
 
-        function moverDerecha(){}
-        function moverIzquierda(){}
-        function moverArriba(){}
-        function moverAbajo(){}
+        function moverDerecha(){
+            mLeft += velocidad; //cada vez que se mueva 50px se va a sumar 
+            pelota.style.marginLeft = mLeft + "px";
+        }
+        function moverIzquierda(){
+            mLeft -= velocidad; //cada vez que se mueva 50px se va a sumar 
+            pelota.style.marginLeft = mLeft + "px";
+        }
+        function moverArriba(){
+            mTop += velocidad; 
+            pelota.style.marginTop = mTop + "px";
+        }
+        function moverAbajo(){
+            mTop -= velocidad; 
+            pelota.style.marginTop = mTop + "px";
+        }
     </script>
 </body>
 </html>
